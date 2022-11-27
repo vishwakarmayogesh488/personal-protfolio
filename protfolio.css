@@ -1,0 +1,451 @@
+
+/*    header    section     start   */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+body {
+    background: linear-gradient(rgb(125, 214, 17), rgb(142, 13, 149));
+    height: 100vh;
+padding: 15px 35px;
+    color: #fff;
+    display: flex;
+    gap: 20px;
+}
+section{
+    min-height: 100%;
+}
+
+
+header {
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+    backdrop-filter: blur(.4rem);
+    width: 30%;
+    padding: 20px 30px;
+    align-items: center;
+    text-align: center;
+    /* height: 100%; */
+}
+
+header .user img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;
+    box-shadow: 0 0 0 9px rgba(255, 255, 255, .1);
+}
+
+
+header .navbar ul li{
+    margin:1rem 0;
+    list-style: none;
+}
+.roll{
+    font-size: 20px;
+}
+header .navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding:8px;
+    font-size: 20px;
+    color:#fff;
+    background:rgba(255,255,255,.2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    border-radius: 1rem;
+    transition: all .2s linear;
+}
+
+header .navbar ul li a:hover{
+    background:rgba(255,255,255,.5);
+    color:#555;
+    transition: none;
+}
+/* header           section      end */
+
+
+
+/* home section start */
+.container{
+
+    width:80rem;
+    background:rgba(255,255,255,.2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
+    backdrop-filter: blur(.4rem);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    padding-bottom: 10rem;
+}
+
+.home h3{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color:#eee;
+}
+
+.home .name span{
+    font-size: 2rem;
+    color:#fff;
+}
+
+.home .post{
+    padding:1rem 0;
+}
+
+.home .post span{
+    font-size: 30px;
+    color:#fff;
+    font-weight: lighter;
+}
+
+.home .share{
+    position: absolute;
+    left:50%; bottom:5rem;
+    transform: translateX(-50%);
+    display: flex;
+    padding: 6px;
+    border-radius: 1rem;
+    background: rgba(255,255,255,.1);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    transition: .2s linear;
+}
+
+.home .share a{
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    padding:1rem 2rem;
+    margin:1rem;
+    color:#fff;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+.home .share a:hover{
+    background:rgba(255,255,255,.5);
+    color:#555;
+}
+.home .btn{
+    padding: 9px 45px;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    color: #fff;
+    background:rgba(255,255,255,.5);
+    border: none;
+    
+}
+.home .btn:hover{
+    background:rgba(255,255,255,.5);
+    color:#555;
+}
+
+/* home section end */
+
+
+
+/* about section start */
+.about{
+padding: 20px 35px 20px 35px;
+color: #fff;
+overflow: hidden;
+}
+
+.about h2{
+    text-align: center;
+    font-size: 24px;
+    margin: 10px 0px;
+    font-weight: 100;
+}
+.userInformation h3{
+    font-size: 22px;
+    color: #eee;
+    font-weight: 100;
+}
+.userInformation h3 span{
+    font-size: 25px;
+font-weight: 100;
+    color: #fff;
+}
+.userInformation p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.skills{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+}
+.skills .progress{
+    padding: 10px 6px;
+    box-shadow: 0 1rem 2rem rgba(0 0 0 / 20%);
+    background: rgba(255, 255, 255, .2);
+    border-radius: 12px;
+    margin: 8px 0px;
+
+}
+.skills .progress h3{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 200;
+
+}
+.skills .progress p{
+    height: 3.5px;
+    width: 100%;
+    background:#555;
+    margin: 11px 0;
+    position: relative;
+
+}
+.skills .progress p span{
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left:0;
+   height: 100%;
+   width: 100%;
+
+}
+.skills .progress:nth-child(1) p span{
+    width: 95%;
+}
+.skills .progress:nth-child(2) p span{
+    width:85%;
+}
+.skills .progress:nth-child(3) p span{
+    width: 70%;
+}
+
+.skills .progress:nth-child(4) p span{
+    width: 65%;
+}
+/* about section end */
+
+
+/* srvice section start */
+.service{
+    
+    text-align: center;
+    
+    padding: 25px;
+    
+}
+.service .box-container{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    
+    
+}
+.service h1{
+    font-size: 25px;
+    font-weight: lighter;
+    margin: 15px;
+    
+    
+}
+.service .box-container .box{
+    margin:6px;
+    padding: 5px 20px;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0 0 0 / 20%);
+    background: rgba(255, 255, 255, .2);
+    text-align: center;
+    flex: 1 0 40%;
+
+
+}
+.box-container .box .fab, .fas{
+    color: #fff;
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+.sevice .box-container .box p{
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 5rem 5rem;
+}
+
+
+/* srvice section end */
+
+
+
+/* education section start */
+.education{
+    padding: 25px;
+    text-align: center;
+}
+.education h2{
+    font-size: 30px;
+    margin:15px;
+    font-weight:lighter;
+}
+.education .box-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    
+}
+
+.education .box-container .box{
+    flex: 1 0 42%;
+padding: 1rem 0;
+padding: 13px;
+   border-left: 2px solid #eee;     
+}
+.education .box-container .box .year{
+    font-size: 1.3rem;
+    color: #eee;
+    position: relative;
+    
+
+}
+.education .box-container .box .year::before{
+    content: "";
+    position: absolute;
+    top: .3rem;
+    left: -25px;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background: #fff;
+}
+.education .box-container .box h3{
+    font-size: 1rem;
+    color: #eee;
+    margin: 8px;
+    font-weight: lighter;
+}
+.education .box-container .box p{
+    font-size: 15px;
+    color: #eee;
+    padding: 10px;
+    
+    
+}
+
+/* education section end */
+    
+
+/* contact sectioan strt */
+
+.contact h2 {
+    font-size: 2rem;
+    font-weight: lighter;
+    text-align: center;
+    margin: 35px;
+}
+  .contact .contactContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+  }
+  .contact .contactContainer form{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 1rem 2rem rgba(0 0 0 / 20%);
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, .2);
+    padding: 1.5rem 1rem;
+
+    border-radius: 1rem;
+    outline: none;
+    height: 100%;
+}
+
+
+  .contact .contactContainer form .box{
+ box-shadow: 0 1rem 2rem rgba(0 0 0 / 20%);
+ background: rgba(255, 255, 255, .2);
+border-radius: 12px;
+margin: 9px 0;
+height: 2rem;
+width: 49%;
+font-size: 1rem;
+color: #fff;
+text-transform: none;
+border: none;
+padding: 0 10px;
+
+  }
+  ::placeholder{
+    color: #fff;
+
+  }
+  .contact .contactContainer form .message{
+    padding: 1rem;
+    height: 10rem;
+    width: 100%;
+    resize: none;
+    
+
+  }
+  .contact .contactContainer form .btn{
+    
+    width: 49%;
+    padding:5px 20px;
+    border-radius:12px;
+    height: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0 0 0 / 20%);
+    background: rgba(255, 255, 255, .2);
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+
+  }
+  .contact .contactContainer .content{
+    padding: 0 30px;
+    margin-top: 2rem;
+  }
+  
+    .contact .contactContainer .content .icons h3{
+    font-size: 14px;
+    font-weight: lighter;
+
+  }
+  .icons2 h3 i{
+    font-size: 10px;
+  }
+  
+/* contact section end */
+
+
+/* background changer start */
+.bgchanger{
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    border-radius: 1rem;
+    backdrop-filter: blur(.4rem);
+     width: 7%;
+     height: 53%;
+}
+
+.bgchanger span{
+    display: block;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    cursor:pointer;
+    margin: 22px;
+     box-shadow: 0 0 0 7px rgba(255, 255, 255, .1);
+    
+            
+}
+
+/* background changer end */
+
